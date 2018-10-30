@@ -177,7 +177,10 @@ namespace SimpleWPFReporting
             PrintDialog printDialog = new PrintDialog();
 
             bool? result = printDialog.ShowDialog();
-
+            
+            reportContainer.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+            reportContainer.Arrange(new Rect(0, 0, reportContainer.DesiredSize.Width, reportContainer.DesiredSize.Height));
+            
             if (result != true) return;
 
             Size reportSize = GetReportSize(reportContainer, margin, orientation, printDialog);
