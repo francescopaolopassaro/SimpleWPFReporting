@@ -2,15 +2,8 @@
 
 Reporting in WPF (XAML) made easy
 
-## How to get it
-
-SimpleWPFReporting package is available on [NuGet](https://www.nuget.org/packages/SimpleWPFReporting/)
-
-You can use Package Manager Console to get it:
-
-~~~powershell
-PM> Install-Package SimpleWPFReporting
-~~~
+30/10/2018 - Passaro Francesco Paolo
+--> Fixing bug with Report Pages
 
 ## How does it work
 
